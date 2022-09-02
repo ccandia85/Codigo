@@ -59,3 +59,19 @@ git show ID_commit
 ```bash
 git branch -M main
 ```
+
+* Descripcion
+```bash
+git remote -v
+```
+
+* Descripción
+```bash
+git push origin main
+```
+* Seguidamente sign in browser, 
+login con tu cuenta de github,
+luego autorizar (boton verde).
+seguidamente, actualizar la pagina
+en tu github de tu repositorio.
+Debería mostrar lo desarrollado en README.md
