@@ -41,3 +41,21 @@ git add READ.md
 ```bash
 git commit -m "Creando mi primer commit"
 ```
+
+* Poder ver el historial de Commit.
+[x] Git log retorna un "id" con este 
+ID vamos a poder ver el detalle o
+ambios que se hicieron en se commit.
+
+```bash
+git log
+```
+* Muestra el commit consultado
+```bash
+git show ID_commit
+```
+
+* Cambiar el nombre de la rama a Main
+```bash
+git branch -M main
+```
