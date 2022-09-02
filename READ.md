@@ -28,11 +28,15 @@ git init
 ```bash
 git status
 ```
-* Para agregar 
+* Para agregar los archivos a la memoria de la PC.
 ```bash
 git add .
+```
+
+```bash
 git add READ.md
 ```
+* Crea el registro de los cambios realizados.
 
 ```bash
 git commit -m "Creando mi primer commit"
