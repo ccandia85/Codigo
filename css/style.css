@@ -42,6 +42,26 @@ h1[role="titulo"] {
     margin: 20px;
 }
 
+.productos_laptop:hover{
+    border-color: red;
+    box-shadow: 10px 0px 10px red;
+    cursor: grab;
+}
+
+.productos_laptop:hover > img{
+    opacity: 50%;
+}
+
+.productos_celular:hover{
+    border-color: blue;
+    box-shadow: 10px 0px 10px blue;
+    cursor: grab;
+}
+
+.productos_celular:hover > img{
+    opacity: 50%;
+}
+
 .productos_celular{
     border: 2px solid blue;
     border-radius: 18px;
@@ -65,4 +85,32 @@ h1[role="titulo"] {
 .celular > h2{
     font-family: 'Segoe UI';
     font-style: italic;
+}
+
+.div_form{
+    width: 400px;
+    margin: 20px auto;
+}
+
+.div_form > form > input{
+    height: 40px;
+    border-radius: 20px;
+    width: 70%;
+    font-size: 20px;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.div_form > form > input:focus{
+    color: black;
+}
+
+/*pseudo elementos*/
+.price:before{
+    content: "$  ";
+}
+
+.price:after{
+    content: ".00";
 }
