@@ -1,5 +1,9 @@
 /*Selectores*/
 /*Selector de elemento*/
+body {
+    font-family: "Poppins", sans-serif, Helvetica;
+  }
+
 h1 {
     text-align: center;
     color: green;
@@ -7,6 +11,7 @@ h1 {
     padding: 20px;
     text-align: center;
     font-size: 20px;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 h1[role="titulo"] {
@@ -32,7 +37,7 @@ h1[role="titulo"] {
 }
 
 #div_temas{
-    display: none;
+    display: block;
 }
 
 .productos_laptop{
