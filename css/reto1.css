@@ -5,11 +5,25 @@
   }
   
   body {
-    background-color: hsl(30, 38%, 92%);
+    /*background-color: hsl(30, 38%, 92%);*/
+    background-color: blue;
   }
   
+@media (min-width: 600px) {
+  body{
+    background-color: hsl(30, 30, 92);
+  }
+}
+
+@media (min-width: 900px) {
+  body{
+    background-color: red;
+  }
+}
+
   .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -17,24 +31,51 @@
   
   .left-image {
     background: url("../images/image-product-desktop.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    background-position: 0% 30%;
+    height: 200px;
     width: 300px;
     background-color: #fff;
     border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .content {
+    /*height: 400px;*/
+    width: 300px;
+    background-color: #fff;
     border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 20px;
+  }
+  
+@media (min-width: 600px){
+  .container {
+    flex-direction: row;
+  }
+  
+  .left-image {
+    background-size: cover;
+    background-position: 50% 0%;
+    height: 400px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 0px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
   
   .content {
     height: 400px;
-    width: 250px;
+    width: 300px;
     background-color: #fff;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 20px;
   }
-  
+}
+
   .sub-title {
     font-family: "Montserrat", sans-serif;
     color: hsl(228, 12%, 48%);
